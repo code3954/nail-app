@@ -1,8 +1,10 @@
 import streamlit as st
 
-from ui.home import home
-from ui.eda import eda
-from ui.ml import ml
+from ui.eda import show_eda
+from ui.home import show_home
+from ui.ml import show_ml
+
+
 
 def main():
     st.markdown("<h1 style='text-align: center; color: black;'>손톱 증상 예측 앱</h1>", unsafe_allow_html=True)
@@ -13,11 +15,12 @@ def main():
     choice = st.sidebar.selectbox("메뉴 선택", menu)
 
     if choice == menu[0]:
-        home()
+        show_home()
     elif choice == menu[1]:
-        eda()
+        show_eda()
     elif choice == menu[2]:
-        ml()
+        show_ml()
+        
 
 if __name__ == "__main__":
     main()

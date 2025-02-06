@@ -1,0 +1,6 @@
+0 Acral_Lentiginous_Melanoma(말초 부위에 발생하는 일종의 피부암)
+1 blue_finger(폐 질환.심장 질환.혈구 및 혈관 이상)
+2 clubbing(곤봉증: 주로 호흡기 질환과 관련)
+3 Healthy_Nail(정상적인 상태의 손톱)
+4 Onychogryphosis(손톱 굴곡증: 50%는 진균 감염.)
+5 pitting(손톱에 작은 구멍들이 생기는 증상:건선)

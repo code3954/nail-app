@@ -31,9 +31,9 @@
 
 
 ## 사용한 data
-- **Kaggle**(https://www.kaggle.com/):
-  - [Nail Disease Detection](https://www.kaggle.com/datasets/nikhilgurav21/nail-disease-detection-dataset)
-  - [Nail Disease Image Classification Dataset](https://www.kaggle.com/datasets/josephrasanjana/nail-disease-image-classification-dataset)
+- **Kaggle** https://www.kaggle.com/:
+  - Nail Disease Detection(https://www.kaggle.com/datasets/nikhilgurav21/nail-disease-detection-dataset)
+  - Nail Disease Image Classification Dataset(https://www.kaggle.com/datasets/josephrasanjana/nail-disease-image-classification-dataset)
 
 
 
@@ -106,7 +106,7 @@
 ### │   └── ml.py               # 머신러닝 모델 관련 코드
 ### ├── model
 ### │    ├── keras_model.h5  # 학습된 모델 파일
-### │   └── labels.txt      # 모델 학습에 사용된 레이블 파일
+### │    └── labels.txt      # 모델 학습에 사용된 레이블 파일
 ### ├── nail.ipynb          # 데이터 분석 및 모델 훈련을 위한 Jupyter 노트북
 ### └── requirements.txt    # 필요한 패키지 목록
 

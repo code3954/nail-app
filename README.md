@@ -1,5 +1,5 @@
 # nail-app
-
+- 머신러닝을 활용하여 네일 이미지를 업로드하면 질병을 예측할 수 있는 앱을 제작해보았습니다.
 
 
 
@@ -98,18 +98,17 @@
 
 
 ## 어플리케이션 구성
-
- ├── README.md
- ├── ui
-     ├── app.py # Streamlit 앱 실행 파일 │
-     ├── home.py # 홈 화면 │ 
-     ├── eda.py # 데이터 분석 코드 │ 
-     ├── ml.py # 머신러닝 모델 관련 코드 │ 
-     ├── model │ 
-     │   ├── keras_model.h5 # 학습된 모델 파일 │
-     │   └── latels.txt # 모델 학습에 사용된 레이블 파일 │ 
-     ├── nail.ipynb # 데이터 분석 및 모델 훈련을 위한 Jupyter 노트북 │
-     └── requirements.txt # 필요한 패키지 목록
+- ├── README.md
+- ├── ui
+-     ├── app.py # Streamlit 앱 실행 파일 │
+-     ├── home.py # 홈 화면 │ 
+-     ├── eda.py # 데이터 분석 코드 │ 
+-     ├── ml.py # 머신러닝 모델 관련 코드 │ 
+-     ├── model │ 
+-     │   ├── keras_model.h5 # 학습된 모델 파일 │
+-     │   └── latels.txt # 모델 학습에 사용된 레이블 파일 │ 
+-     ├── nail.ipynb # 데이터 분석 및 모델 훈련을 위한 Jupyter 노트북 │
+-     └── requirements.txt # 필요한 패키지 목록
 
 
 

@@ -41,4 +41,4 @@ def show_ml():
             st.info(f'예측 결과: {class_name}')
             st.info(f'신뢰도: {confidence_score:.2f}')
     else:
-        st.warning("잠깐! '네일 상태 분석' 메뉴에서 이미지를 업로드하고 확인해주세요.")
+        st.warning("주의! '네일 상태 분석' 메뉴에서 이미지를 업로드하고 확인해주세요.")

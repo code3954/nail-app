@@ -8,7 +8,7 @@ from ui.ml import show_ml
 
 def main():
     st.write('\n\n')
-    st.markdown("<h1 style='text-align: center; color: black;'>네일 건강 예측 앱</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; color: black;'>네일이미지로 건강 예측</h1>", unsafe_allow_html=True)
     st.write('\n\n')
     st.sidebar.title("네일 건강 확인해보기") 
 

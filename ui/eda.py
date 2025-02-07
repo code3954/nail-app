@@ -3,8 +3,7 @@ from PIL import Image
 
 def show_eda():
     st.subheader("네일 이미지 분석")
-    st.text("네일 이미지를 업로드하면")
-    st.text("네일 정보를 분석해서 건강상태를 알려드립니다.")
+    st.text("네일 이미지를 업로드하면 네일 정보를 분석해서 건강상태를 알려드립니다.")
     st.write('\n\n')
     uploaded_file = st.file_uploader("네일 이미지를 업로드하세요.정확한 분석을 위해 밝은 곳에서 정면으로 찍은 이미지를 올려주세요.", type=["jpg", "jpeg", "png"])
     

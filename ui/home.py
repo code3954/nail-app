@@ -30,7 +30,7 @@ def show_home():
     """, unsafe_allow_html=True)
     st.markdown('&nbsp;')
 
-st.markdown("""
+    st.markdown("""
     <div style="border: 2px solid green; border-radius: 15px; padding: 10px;">
         <h3>사용한 data</h3>
         <strong>Kaggle</strong><br>
@@ -39,10 +39,11 @@ st.markdown("""
         ·Nail Disease Image Classification Dataset<br>
         <a href="https://www.kaggle.com/datasets/josephrasanjana/nail-disease-image-classification-dataset">Link</a><br>
     </div>
-""", unsafe_allow_html=True)
+    """, unsafe_allow_html=True)
+    
 
 
-st.markdown("""
+    st.markdown("""
     <div style="border: 2px solid Blue; border-radius: 15px; padding: 10px;">
         <h3>인용한 site</h3>
         <strong>HiDoc 뉴스</strong><br>
@@ -52,4 +53,4 @@ st.markdown("""
         <strong>광양사랑병원</strong><br>
         <a href="http://www.gysarang.com/Module/News/Lecture.asp?MODE=V&SRNO=2585">Link</a><br>
     </div>
-""", unsafe_allow_html=True)
+    """, unsafe_allow_html=True)

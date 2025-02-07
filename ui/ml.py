@@ -25,11 +25,12 @@ def predict(model, data, class_names):
     return class_name[2:], confidence_score
 
 def show_ml():
-    st.title('손톱 건강 상태 예측')
+    st.subheader('네일 건강 상태 예측')
+    st.text('아래의 질병 예측하기 버튼을 눌러주세요.')
     
     if 'analyzed_image' in st.session_state:
         image = st.session_state['analyzed_image']
-        st.image(image, caption="분석할 이미지", use_column_width=True)
+        st.image(image, caption="업로드 이미지", width=250)
         
         if st.button("질병 예측하기"):
             model, class_names = load_model_and_labels()
@@ -40,4 +41,4 @@ def show_ml():
             st.info(f'예측 결과: {class_name}')
             st.info(f'신뢰도: {confidence_score:.2f}')
     else:
-        st.warning("먼저 '이미지 분석' 메뉴에서 이미지를 업로드하고 분석해주세요.")
+        st.warning("잠깐! '네일 상태 분석' 메뉴에서 이미지를 업로드하고 확인해주세요.")

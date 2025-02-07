@@ -31,9 +31,9 @@
 
 
 ## 사용한 data
-- **Kaggle** https://www.kaggle.com/:
-  - Nail Disease Detection(https://www.kaggle.com/datasets/nikhilgurav21/nail-disease-detection-dataset)
-  - Nail Disease Image Classification Dataset(https://www.kaggle.com/datasets/josephrasanjana/nail-disease-image-classification-dataset)
+- **Kaggle** https://www.kaggle.com
+  - Nail Disease Detection: https://www.kaggle.com/datasets/nikhilgurav21/nail-disease-detection-dataset
+  - Nail Disease Image Classification Dataset: https://www.kaggle.com/datasets/josephrasanjana/nail-disease-image-classification-dataset
 
 
 

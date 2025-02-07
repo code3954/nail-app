@@ -1,6 +1,8 @@
 # nail-app
 
 
+
+
 ## 기술 스택
 - **Python** == 3.10.16
 - **Streamlit** == 1.41.1
@@ -29,7 +31,7 @@
 
 
 ## 사용한 data
-- **Kaggle**:
+- **Kaggle**(https://www.kaggle.com/):
   - [Nail Disease Detection](https://www.kaggle.com/datasets/nikhilgurav21/nail-disease-detection-dataset)
   - [Nail Disease Image Classification Dataset](https://www.kaggle.com/datasets/josephrasanjana/nail-disease-image-classification-dataset)
 

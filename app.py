@@ -4,8 +4,6 @@ from ui.eda import show_eda
 from ui.home import show_home
 from ui.ml import show_ml
 
-
-
 def main():
     st.write('\n\n')
     st.markdown("<h1 style='text-align: center; color: black;'>네일이미지로 건강 예측</h1>", unsafe_allow_html=True)
@@ -23,7 +21,6 @@ def main():
         show_eda()
     elif symptom_prediction:
         show_ml()
-        
 
 if __name__ == "__main__":
     main()

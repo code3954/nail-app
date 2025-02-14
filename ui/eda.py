@@ -18,7 +18,6 @@ def show_eda():
         st.write(f"이미지 크기: {image.size[0]}x{image.size[1]} 픽셀")
         st.write(f"이미지 모드: {image.mode}")
         
-        
         # 분석된 이미지 데이터를 세션 상태에 저장
         st.session_state['analyzed_image'] = image
         st.success("이미지 분석이 완료되었습니다. '질병 예측' 메뉴에서 결과를 확인하세요.")

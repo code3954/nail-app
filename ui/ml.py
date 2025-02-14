@@ -1,28 +1,11 @@
 import streamlit as st
 import numpy as np
 from PIL import Image, ImageOps
-from keras.models import load_model
-
-def load_model_and_labels():
-    model = load_model("model/keras_model.h5", compile=False)
-    class_names = open("model/labels.txt", "r", encoding='utf-8').readlines()
-    return model, class_names
-
-def preprocess_image(image):
-    size = (224, 224)
-    image = ImageOps.fit(image, size, Image.Resampling.LANCZOS)
-    image_array = np.asarray(image)
-    normalized_image_array = (image_array.astype(np.float32) / 127.5) - 1
-    data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
-    data[0] = normalized_image_array
-    return data
-
-def predict(model, data, class_names):
-    prediction = model.predict(data)
-    index = np.argmax(prediction)
-    class_name = class_names[index]
-    confidence_score = prediction[0][index]
-    return class_name[2:], confidence_score
+from nail import load_model_and_labels, preprocess_image, predict
+import requests
+import sys
+sys.path.append("C:/id/Github/nail-app/ui/nail.py")  # nail.py가 있는 경로를 입력하세요
+from nail import load_model_and_labels, preprocess_image, predict
 
 def show_ml():
     st.subheader('네일 건강 상태 예측')
@@ -40,5 +23,23 @@ def show_ml():
             st.success("예측이 완료되었습니다!")
             st.info(f'예측 결과: {class_name}')
             st.info(f'신뢰도: {confidence_score:.2f}')
+
+            # 병원 찾기 기능
+            st.subheader('가까운 병원 찾기')
+            lat = st.text_input('위도')
+            lon = st.text_input('경도')
+
+            if st.button('병원 검색'):
+                api_key = "AIzaSyDBSw98bOQeXN_WLTqac4FKQ3lnlDi_IYU"  # 여기에 Google Maps API 키를 입력하세요
+                url = f"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location={lat},{lon}&radius=5000&type=hospital&key={api_key}"
+                response = requests.get(url)
+
+                if response.status_code == 200:
+                    data = response.json()
+                    st.write('검색 결과:')
+                    for place in data['results']:
+                        st.write(place['name'])
+                else:
+                    st.write('검색 실패')
     else:
         st.warning("주의! '네일 상태 분석' 메뉴에서 이미지를 업로드하고 확인해주세요.")

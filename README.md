@@ -93,7 +93,7 @@
     - streamlit 웹사이트에서 앱이 작동하는지 실행했습니다.
 
 
-
+   
 
 ## nail-app 구조   
 ### ├── README.md
